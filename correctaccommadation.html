@@ -51,40 +51,32 @@ h1, h2 {
 
 .topheader {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   background-color: white;
   padding: 10px 40px;
-  flex-wrap: wrap;
-  height: auto;
   margin-top: 10px;
   gap: 20px;
 }
 
-.topheader img {
-  height: 100px;
-  width: auto;
-}
-
-.left-logo,
-.center-logo,
-.right-logo {
-  flex: 1;
-  text-align: center;
-}
-
+/* Equal spacing */
 .left-logo {
-  text-align: left;
-}
-
-.right-logo {
-  text-align: right;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .center-logo {
-  text-align: center;
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Keeps it perfectly centered */
 }
 
+.right-logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
 /* Make center logo slightly more prominent */
 .center-logo img {
   width: 380px;
@@ -178,6 +170,7 @@ h1, h2 {
   .left-logo img,
   .right-logo img {
     width: 180px;
+gap:80px;
   }
 
   .hamburger {
@@ -416,19 +409,17 @@ h1, h2 {
 <header>
   <!-- Top Header with Image Logos -->
 <div class="header-wrapper">
-  <div class="topheader">
-    <div class="left-logo">
-      <img src="img-folder\14112024_-_03_1_-removebg-preview.png" alt="Left Logo">
-    </div>
-    <div class="center-logo">
-      <img src="img-folder\tcelogo.JPG" alt="Center Logo">
-    </div>
-    <img src="img-folder/confgen-logo.png" alt="Conference Logo1" class="conference-logo1">
-    <div class="right-logo">
-      <img src="https://www.tceeiacp.in/images/New_Four_Logo.png" alt="Right Logo">
-    </div>
+ <div class="topheader">
+  <div class="left-logo">
+    <img src="img-folder\14112024_-_03_1_-removebg-preview.png" alt="Left Logo">
   </div>
 
+  <div class="center-logo">
+    <img src="img-folder\tcelogo.JPG" alt="Center Logo">
+  </div>
+
+  <div class="right-logo"></div> <!-- IMPORTANT: Empty div -->
+</div>
   <!-- Navigation Bar -->
   <div class="navbar">
     
@@ -444,7 +435,7 @@ h1, h2 {
       <a href="index.html#dates">Important Dates</a>
       <a href="#correctaccommadation.html">Accommodation</a>
       <a href="maduraipage.html">Explore Madurai</a>
-      <a href="phygallery.html">Gallery</a>
+      
       <a href="index.html#footer-section">Contact Us</a>
       <a href="index.html#payment">Register Here</a>
     </div>
@@ -522,7 +513,7 @@ h1, h2 {
  <div class="accommodation-contact" style="text-align:center; margin:40px auto; max-width:900px; padding:15px; border-top:1px solid #ddd;">
   <p style="font-size:1rem; color:#333;">
     For further assistance regarding accommodation, please contact:<br>
-    <strong>Dr.S.Sivallango,9843817539</strong>
+    <strong>Dr. S.A.R. Shiek Masthan , Contact: 9790935992</strong>
   </p>
 </div>
 
