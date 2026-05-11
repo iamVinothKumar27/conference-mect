@@ -69,33 +69,16 @@
     height: 100px;
   }
 
-  .left-logo,
-  .right-logo {
-    flex: 1;
-  }
-
   .left-logo {
-    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 40px;
   }
 
   .left-logo img {
-    width: 350px;
-    height: auto;
-  }
-
-.center-logo img {
-    width: 380px;
-    height: auto;
-  }
-
-  .center-logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .right-logo {
-    text-align: right;
+    height: 100px;
+    width: auto;
+    object-fit: contain;
   }
 
   .navbar {
@@ -153,7 +136,7 @@
   .hamburger div {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: #333;
     margin: 4px 0;
   }
 
@@ -387,34 +370,30 @@
    <div class="header-wrapper">
   <div class="topheader">
     <div class="left-logo">
-      <img src="img-folder\14112024_-_03_1_-removebg-preview.png" alt="Left Logo">
+      <img src="img-folder/14112024_-_03_1_-removebg-preview.png" alt="Left Logo">
+      <img src="img-folder/tcelogo.jpg" alt="Center Logo">
     </div>
-    <div class="center-logo">
-      <img src="img-folder\tcelogo.JPG" alt="Center Logo">
-    </div>
-   
   </div>
 
   <!-- Navigation Bar -->
   <div class="navbar">
-    
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div><div></div><div></div>
+    </div>
 
     <!-- Collapsible links -->
     <div class="nav-links" id="navLinks">
       <a href="index.html#home">Home</a>
       <a href="index.html#about">About</a>
       <a href="index.html#committee-section">Committees</a>
-      <a href="index.html#speakers">Speakers</a>
-      <a href="#programme.html">Programme Schedule</a>
-      <a href="index.html#call-for-papers">Call for Papers</a>
+      <a href="programme.html">Programme Schedule</a>
+      <a href="index.html#callforpapers">Call for Papers</a>
       <a href="index.html#dates">Important Dates</a>
       <a href="correctaccommadation.html">Accommodation</a>
-      <a href="maduraipage.html"">Explore Madurai</a>
-      
-      <a href="index.html#footer section">Contact Us</a>
-      <a href="index.html#payment">Register Here</a>
+      <a href="maduraipage.html">Explore Madurai</a>
+      <a href="index.html#footer-section">Contact Us</a>
+      <a href="index.html#payment" class="register-btn">Register Here</a>
     </div>
-	
 
   <script>
     function toggleMenu() {
