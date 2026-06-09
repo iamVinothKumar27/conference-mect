@@ -811,7 +811,7 @@ document.addEventListener('DOMContentLoaded', function () {
     </section>
 	
 	 </section>
-<div class="theme">
+<div class="theme" id="callforpapers">
   <div class="theme-container">
     <section class="section" id="dates">
     <h2>Conference Tracks</h2></section>
@@ -899,6 +899,85 @@ document.addEventListener('DOMContentLoaded', function () {
 
   </div>
 </div>
+
+<!-- ===== Call for Papers: Policy Sections ===== -->
+<div class="cfp-policies">
+  <div class="theme-container">
+
+    <section class="section cfp-policy-section">
+      <h2>Call for Papers</h2>
+    </section>
+
+    <div class="policy-card">
+      <h3 class="policy-heading">Editorial Policy</h3>
+      <div class="policy-body">
+        <p>The conference follows a rigorous editorial process to ensure the highest standards of academic integrity and quality. The editorial board evaluates all submitted manuscripts based solely on academic merit, originality, and relevance to the conference themes. The editorial board reserves the right to accept, reject, or request revisions of any submitted work.</p>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <h3 class="policy-heading">Peer Review Policy</h3>
+      <div class="policy-body">
+        <p>All submitted papers are subject to a double-blind peer review process conducted by at least two independent expert reviewers in the relevant field. Reviewers assess manuscripts for technical quality, originality, clarity, and significance. Authors will be notified of the review outcome along with constructive feedback to support revision where applicable.</p>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <h3 class="policy-heading">Publication Ethics</h3>
+      <div class="policy-body">
+        <p>The conference is committed to upholding the highest standards of publication ethics. All parties involved — authors, reviewers, and editors — are expected to adhere to ethical standards in research and publication. Fabrication, falsification, or misrepresentation of research data is strictly prohibited. Proper attribution must be given to all sources and contributors.</p>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <h3 class="policy-heading">Authors' Responsibilities</h3>
+      <div class="policy-body">
+        <ul>
+          <li>Authors must ensure their submitted work is original and not simultaneously under review at any other conference or journal.</li>
+          <li>All listed authors must have made significant intellectual contributions to the research.</li>
+          <li>Authors are required to properly cite all sources and acknowledge all contributions.</li>
+          <li>Any conflicts of interest must be disclosed to the editorial committee.</li>
+          <li>Authors must be prepared to provide raw data and supporting materials upon request during review.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <h3 class="policy-heading">Reviewers' Responsibilities</h3>
+      <div class="policy-body">
+        <ul>
+          <li>Reviewers must maintain strict confidentiality of all submitted manuscripts and review materials.</li>
+          <li>Reviews must be conducted objectively, constructively, and in a timely manner.</li>
+          <li>Reviewers must disclose any conflicts of interest and decline to review papers where such conflicts exist.</li>
+          <li>Reviewers should not use unpublished information from submitted manuscripts for personal advantage.</li>
+          <li>Personal criticism of authors is not appropriate; feedback should focus on the work itself.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <h3 class="policy-heading">Editorial Responsibilities</h3>
+      <div class="policy-body">
+        <ul>
+          <li>Editors are responsible for fair and unbiased decisions on which submitted papers should be published.</li>
+          <li>Editors must evaluate manuscripts purely on their intellectual and scientific merit, free from discrimination.</li>
+          <li>Strict confidentiality of all submitted manuscripts must be maintained throughout the review process.</li>
+          <li>Editors must address any complaints, ethical concerns, or disputes promptly and transparently.</li>
+          <li>Editors must not use unpublished information from submitted manuscripts for personal research without written consent.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <h3 class="policy-heading">Plagiarism Policy</h3>
+      <div class="policy-body">
+        <p>All submitted manuscripts are screened for plagiarism using standard detection tools. A similarity index exceeding 20% is not acceptable and will result in immediate rejection. Authors found to have committed plagiarism — including undisclosed text recycling or self-plagiarism — will be disqualified from the conference. Proper citation and acknowledgement of all referenced works is mandatory.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- ===== End Call for Papers Policy Sections ===== -->
 
 <section class="volunteer-section section-padding" id="committee-section">
   <div class="container">
@@ -1167,7 +1246,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 </div>
 
-<div class="g-container" id="callforpapers">
+<div class="g-container">
 
 <div class="registration-wrapper">
     <h2 class="registration-title">Registration Details</h2>
@@ -1437,6 +1516,20 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 </script>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var cfpLink = document.querySelector('a[href="#callforpapers"]');
+    if (cfpLink) {
+      cfpLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        var target = document.getElementById('callforpapers');
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
+  });
+</script>
 
 </body>
 </html>

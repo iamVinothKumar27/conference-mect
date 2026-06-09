@@ -1831,7 +1831,85 @@ footer {
     .accordion-item:hover .accordion-arrow {
         transform: rotate(180deg);
     }
-	
+
+    /* --- Call for Papers: Policy Sections --- */
+    .cfp-policies {
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 0 50px 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .cfp-policy-section {
+        margin-bottom: 10px;
+    }
+
+    .cfp-policy-section h2 {
+        color: #7c1a1f;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 30px;
+        padding-top: 10px;
+    }
+
+    .cfp-policy-section h2::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #7c1a1f;
+        margin: 10px auto 0;
+        border-radius: 2px;
+    }
+
+    .policy-card {
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-left: 5px solid #7c1a1f;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px 25px;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .policy-card:hover {
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .policy-heading {
+        color: #7c1a1f;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #f0e0e0;
+    }
+
+    .policy-body {
+        color: #4a4a4a;
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+
+    .policy-body ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    .policy-body li {
+        color: #4a4a4a;
+        margin-bottom: 8px;
+        font-size: 1.05rem;
+        line-height: 1.6;
+    }
+    /* --- End Policy Sections --- */
+
         /* --- Contact Section --- */
         .incharge-section {
             display: flex;
